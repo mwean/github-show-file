@@ -1,0 +1,18 @@
+{
+  "name": "github-show-file",
+  "version": "1.0.0",
+  "description": "plugin for Google Chrome that adds a button to GitHub PRs to show the full file",
+  "dependencies": {},
+  "devDependencies": {
+    "browserify": "^16.1.1"
+  },
+  "scripts": {
+    "postinstall": "browserify index.js > contentscript.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mwean/github-show-file.git"
+  },
+  "author": "Matt Wean",
+  "license": "MIT"
+}

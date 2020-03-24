@@ -1,0 +1,25 @@
+{
+  "name": "GitHub Show File",
+  "description": "Show the full file in PR reviews",
+  "icons": {},
+  "version": "1.0.0",
+  "permissions": [
+    "activeTab",
+    "tabs"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts" : [
+    {
+      "matches" : [
+         "https://github.com/*"
+      ],
+      "js" : ["contentscript.js"],
+      "run_at" : "document_idle",
+      "all_frames" : false
+    }
+  ],
+  "manifest_version": 2
+}
